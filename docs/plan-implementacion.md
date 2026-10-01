@@ -10,6 +10,7 @@
 
 - Crear `feature/parcial-portal` desde el `main` del proyecto gestionado.
 - Usar commits descriptivos; la rama queda como trabajo no fusionado.
+- La variante para GitHub omite `.github/workflows/calidad.yml` de toda la historia porque la GitHub App no pudo escribir workflows. La comprobación de formato, sintaxis y tests continúa disponible localmente.
 - El ZIP y el SHA completo que lo identifica se calculan desde el mismo commit final.
 
 ## 3. Implementación del portal
@@ -29,10 +30,11 @@
 
 - Incluir fuente, README, pruebas, diagrama y evidencias en el ZIP.
 - Excluir `.git`, secretos, `.env`, `node_modules` y carpetas generadas de despliegue.
-- Entregar el enlace del Preview y el SHA completo del commit asociado al ZIP.
+- Entregar el enlace del Preview, el repositorio privado [PARCIALWEB](https://github.com/Tobyshinho/PARCIALWEB), el SHA completo de la ZIP y la URL del PR solo después de verificarlos.
+- Abrir el PR de `feature/parcial-portal` hacia `main` después de aprobar el SHA exacto; no fusionarlo ni publicar.
 
-## Dependencias externas no resueltas
+## Dependencias y límites externos
 
 1. **DOCX:** falta `EP_Desarrollo_Web_alumno.docx`; la clasificación de 1001/1005 y la reconstrucción del cambio 1002 no puede confirmarse contra la fuente.
-2. **Repositorio/PR:** el ZIP base no trae un remoto GitHub y no se proporcionó la URL/organización del repo. No inventar el remoto ni afirmar que existe un PR. Cuando se reciba un destino compatible y autorizado, crear el PR con `feature/parcial-portal` como head y `main` como base.
+2. **GitHub:** el repositorio privado se confirmó mediante el flujo del propietario. La variante sin workflow se prepara para respetar el permiso de GitHub App; no transferirla hasta aprobar su SHA completo y no declarar PR antes de verificar su URL.
 3. **Zoom nativo:** falta repetir la comprobación con el control de zoom real del navegador; se adjunta la captura equivalente para documentar reflow, identificada expresamente como tal.

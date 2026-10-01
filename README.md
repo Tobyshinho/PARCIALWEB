@@ -38,7 +38,7 @@ Consulta [`docs/pruebas.md`](docs/pruebas.md) para los resultados reales y la ev
 
 ## Entrega y Git
 
-La rama solicitada es `feature/parcial-portal`, creada desde `main`. El SHA final, URL de Preview, URL de repositorio y PR se completarán solo con valores verificados. La URL del repositorio GitHub no estaba incluida entre los insumos recibidos; la entrega no inventa el remoto ni el PR.
+El repositorio privado confirmado es [PARCIALWEB](https://github.com/Tobyshinho/PARCIALWEB). La rama solicitada es `feature/parcial-portal`, creada desde `main`. El SHA de la ZIP y las URL de Preview/PR se informan solo con valores verificados. No se fusiona ni publica el sitio.
 
 Tampoco se recibió `EP_Desarrollo_Web_alumno.docx`; el análisis de 1001/1005 y 1002 es provisional y distingue hechos reportados de hipótesis pendientes de contrastar.
 

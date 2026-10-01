@@ -39,6 +39,8 @@ El análisis estático confirmó cuatro tarjetas, cinco FAQ en dos categorías, 
 
 Se observaron dos problemas reproducibles antes de corregirlos y se conservaron capturas del mismo layout antes y después. La causa, ajuste y archivos están descritos en [`evidencias/README.md`](evidencias/README.md); no se presentan defectos supuestos como correcciones.
 
-## Límites externos pendientes
+## GitHub y límites externos
 
-No se recibió `EP_Desarrollo_Web_alumno.docx` ni una URL/acceso de repositorio GitHub existente. Por ello no se pudo verificar el contenido completo de esa guía ni abrir un Pull Request remoto. La ZIP registra el trabajo local verificable; el PR requiere identificar un destino compatible y autorizado.
+El destino privado confirmado es [PARCIALWEB](https://github.com/Tobyshinho/PARCIALWEB). Tras el rechazo del permiso `Workflows` de la GitHub App, se preparó una variante que omite `.github/workflows/calidad.yml` de toda la historia, conservando las validaciones locales. El SHA que corresponda al ZIP y la URL del Pull Request se entregan solo después de verificar el estado remoto; este registro no declara un PR inexistente.
+
+No se recibió `EP_Desarrollo_Web_alumno.docx`; por tanto, el contenido completo de la guía y los datos fuente de 1001/1005/1002 quedan pendientes de contrastar. El informe provisional está en `analisis-auditoria.md`.
