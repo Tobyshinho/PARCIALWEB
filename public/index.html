@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portal de práctica para consultar servicios de soporte TI y simular una solicitud sin enviarla."
+    />
+    <meta name="theme-color" content="#0d1b2a" />
+    <title>Portal de Soporte TI</title>
+    <link rel="icon" href="assets/brand/portal-ti-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/ui.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Portal TI, inicio">
+          <img
+            class="brand__mark"
+            src="assets/brand/portal-ti-icon.svg"
+            width="44"
+            height="44"
+            alt=""
+          />
+          <span>Portal <strong>TI</strong></span>
+        </a>
+        <button
+          class="navbar__toggle"
+          type="button"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Alternar menú"
+          hidden
+        >
+          <span class="navbar__toggle-lines" aria-hidden="true"></span>
+        </button>
+        <ul class="navbar__menu" id="nav-menu">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#estados">Estados</a></li>
+          <li><a href="#preguntas">Preguntas frecuentes</a></li>
+          <li><a class="nav-cta" href="#soporte">Solicitar apoyo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido" class="container" tabindex="-1">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span> Centro de ayuda · TI
+          </p>
+          <h1 id="hero-title">La tecnología vuelve a estar de tu lado.</h1>
+          <p class="hero__lead">
+            Encuentra orientación para tus herramientas y cuéntanos qué necesitas. Este
+            portal es una práctica: la solicitud se valida y confirma en pantalla, pero
+            nunca se envía ni se guarda.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#soporte"
+              >Crear solicitud de práctica</a
+            >
+            <a class="text-link" href="#servicios"
+              >Explorar servicios <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <p class="hero__note">Sin tickets reales · sin envío de datos</p>
+        </div>
+        <aside class="hero-card" aria-label="Información del portal de práctica">
+          <div class="hero-card__top">
+            <span class="hero-card__icon" aria-hidden="true">?</span>
+            <span class="hero-card__label">Estamos para orientarte</span>
+          </div>
+          <p class="hero-card__title">Un buen comienzo para resolver un problema.</p>
+          <p class="hero-card__copy">
+            Elige un servicio o describe la situación en el formulario de demostración.
+          </p>
+          <a class="hero-card__link" href="#estados"
+            >Conoce los estados de ejemplo <span aria-hidden="true">↗</span></a
+          >
+        </aside>
+      </section>
+
+      <section class="section" id="servicios" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Cómo podemos ayudarte</p>
+          <h2 id="services-title">Servicios de soporte</h2>
+          <p>
+            Cuatro áreas de ejemplo para encontrar rápidamente el tipo de ayuda que
+            buscas.
+          </p>
+        </div>
+        <div class="services__grid">
+          <article class="service-card service-card--featured">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path d="M5 16h5l3-7 6 14 3-7h5" />
+              </svg>
+            </span>
+            <p class="service-card__eyebrow">Conectividad</p>
+            <h3>Red</h3>
+            <p>Conexión inestable, Wi-Fi o acceso a recursos de red.</p>
+            <a href="#soporte" aria-label="Solicitar ayuda de Red"
+              >Pedir orientación <span aria-hidden="true">→</span></a
+            >
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path
+                  d="M16 4.5 19.5 12l8.2 1.2-5.9 5.8 1.4 8.2-7.2-3.8-7.2 3.8 1.4-8.2-5.9-5.8 8.2-1.2L16 4.5Z"
+                />
+              </svg>
+            </span>
+            <p class="service-card__eyebrow">Atención</p>
+            <h3>Prioritario</h3>
+            <p>Una interrupción importante que requiere orientación pronta.</p>
+            <a href="#soporte" aria-label="Solicitar ayuda prioritaria"
+              >Pedir orientación <span aria-hidden="true">→</span></a
+            >
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <rect x="4" y="5.5" width="24" height="17" rx="2" />
+                <path d="M11 27h10m-5-4.5V27" />
+              </svg>
+            </span>
+            <p class="service-card__eyebrow">Dispositivos</p>
+            <h3>Hardware</h3>
+            <p>Equipo, periféricos o accesorios que no funcionan como esperas.</p>
+            <a href="#soporte" aria-label="Solicitar ayuda de Hardware"
+              >Pedir orientación <span aria-hidden="true">→</span></a
+            >
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path d="m11 9-7 7 7 7m10-14 7 7-7 7M19 5l-6 22" />
+              </svg>
+            </span>
+            <p class="service-card__eyebrow">Aplicaciones</p>
+            <h3>Software</h3>
+            <p>Instalación, acceso o errores de las herramientas de trabajo.</p>
+            <a href="#soporte" aria-label="Solicitar ayuda de Software"
+              >Pedir orientación <span aria-hidden="true">→</span></a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="section status-section" id="estados" aria-labelledby="status-title">
+        <div class="section-heading section-heading--compact">
+          <p class="eyebrow">Solo para conocer el flujo</p>
+          <h2 id="status-title">Estados de ejemplo</h2>
+          <p>Estos estados son ilustrativos y no corresponden a solicitudes reales.</p>
+        </div>
+        <div class="status-grid" aria-label="Estados ficticios de una solicitud">
+          <article class="status-card">
+            <span class="status-card__number" aria-hidden="true">01</span>
+            <span class="status-badge status-badge--new">Recibida</span>
+            <h3>La solicitud llegó</h3>
+            <p>En un flujo real, el equipo confirmaría su recepción.</p>
+          </article>
+          <article class="status-card">
+            <span class="status-card__number" aria-hidden="true">02</span>
+            <span class="status-badge status-badge--progress">En revisión</span>
+            <h3>Se revisa el caso</h3>
+            <p>Una persona de soporte analizaría el problema.</p>
+          </article>
+          <article class="status-card">
+            <span class="status-card__number" aria-hidden="true">03</span>
+            <span class="status-badge status-badge--done">Orientación lista</span>
+            <h3>Se comparte una solución</h3>
+            <p>El ejemplo termina con información útil para continuar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section support-section"
+        id="soporte"
+        aria-labelledby="support-title"
+      >
+        <div class="support-intro">
+          <p class="eyebrow">Cuéntanos qué ocurre</p>
+          <h2 id="support-title">Solicitud de soporte</h2>
+          <p>
+            Completa los datos ficticios para probar el formulario. La validación ocurre
+            en tu navegador; al confirmar, la página no transmite ni conserva la
+            solicitud.
+          </p>
+          <div class="support-note">
+            <span class="support-note__symbol" aria-hidden="true">i</span>
+            <p>Usa únicamente datos de prueba. Este formulario no crea un ticket real.</p>
+          </div>
+        </div>
+
+        <form class="support-form" id="support-form" aria-describedby="form-intro">
+          <p class="form-intro" id="form-intro">Todos los campos son obligatorios.</p>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="nombre">Nombre</label>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                autocomplete="name"
+                minlength="3"
+                required
+                aria-describedby="nombre-ayuda"
+              />
+              <span class="field-help" id="nombre-ayuda"
+                >Escribe al menos 3 caracteres.</span
+              >
+            </div>
+            <div class="form-field">
+              <label for="correo">Correo electrónico</label>
+              <input
+                id="correo"
+                name="correo"
+                type="email"
+                autocomplete="email"
+                inputmode="email"
+                required
+                aria-describedby="correo-ayuda"
+              />
+              <span class="field-help" id="correo-ayuda"
+                >Usa un correo ficticio válido, por ejemplo ana@example.test.</span
+              >
+            </div>
+            <div class="form-field form-field--wide">
+              <label for="tipo">Tipo de solicitud</label>
+              <select id="tipo" name="tipo" required aria-describedby="tipo-ayuda">
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="red">Red</option>
+                <option value="prioritario">Prioritario</option>
+                <option value="hardware">Hardware</option>
+                <option value="software">Software</option>
+              </select>
+              <span class="field-help" id="tipo-ayuda"
+                >Elige el servicio relacionado con tu consulta.</span
+              >
+            </div>
+            <fieldset class="form-field form-field--wide priority-fieldset">
+              <legend>Prioridad</legend>
+              <p class="field-help" id="prioridad-ayuda">Selecciona una sola opción.</p>
+              <div class="priority-options" aria-describedby="prioridad-ayuda">
+                <label class="priority-option">
+                  <input type="radio" name="prioridad" value="baja" required />
+                  <span><strong>Baja</strong><small>Consulta general</small></span>
+                </label>
+                <label class="priority-option">
+                  <input type="radio" name="prioridad" value="media" />
+                  <span><strong>Media</strong><small>Impacto moderado</small></span>
+                </label>
+                <label class="priority-option">
+                  <input type="radio" name="prioridad" value="alta" />
+                  <span><strong>Alta</strong><small>Interrupción importante</small></span>
+                </label>
+              </div>
+            </fieldset>
+            <div class="form-field form-field--wide">
+              <label for="descripcion">Descripción</label>
+              <textarea
+                id="descripcion"
+                name="descripcion"
+                rows="5"
+                minlength="10"
+                maxlength="500"
+                required
+                aria-describedby="descripcion-ayuda"
+              ></textarea>
+              <span class="field-help" id="descripcion-ayuda"
+                >Describe el problema en 10–500 caracteres.</span
+              >
+            </div>
+          </div>
+          <div class="form-actions">
+            <button
+              class="button button--primary"
+              id="submit-demo"
+              type="submit"
+              disabled
+            >
+              Confirmar prueba
+            </button>
+            <p>La confirmación es simulada. No se envía ni se guarda ningún ticket.</p>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section faq-contact" id="preguntas" aria-labelledby="faq-title">
+        <div class="faq-area">
+          <div class="section-heading section-heading--compact">
+            <p class="eyebrow">Respuestas rápidas</p>
+            <h2 id="faq-title">Preguntas frecuentes</h2>
+          </div>
+          <div class="faq-category">
+            <h3>Solicitudes y atención</h3>
+            <details class="faq-item">
+              <summary>¿Este formulario envía una solicitud?</summary>
+              <p>
+                No. Es una demostración local; la confirmación no se envía ni se guarda.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Qué prioridad debo elegir?</summary>
+              <p>
+                Elige la opción que mejor describa el impacto, usando solo el ejemplo
+                ficticio.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Los estados muestran casos reales?</summary>
+              <p>
+                No. “Recibida”, “En revisión” y “Orientación lista” son estados
+                ilustrativos.
+              </p>
+            </details>
+          </div>
+          <div class="faq-category">
+            <h3>Equipo y herramientas</h3>
+            <details class="faq-item">
+              <summary>¿Qué hago si falla mi conexión?</summary>
+              <p>
+                En una situación real, revisa la conexión y contacta a tu mesa de ayuda
+                habitual.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Puedo reportar un problema de software o hardware?</summary>
+              <p>
+                Sí, en este ejercicio puedes seleccionar Software o Hardware como tipo de
+                ejemplo.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <aside class="contact-card" aria-labelledby="contact-title">
+          <p class="eyebrow">Contacto de práctica</p>
+          <h2 id="contact-title">Estamos cerca para orientarte.</h2>
+          <p>Estos datos son ficticios y no corresponden a un servicio real.</p>
+          <dl class="contact-details">
+            <div>
+              <dt>Correo de ejemplo</dt>
+              <dd><a href="mailto:soporte@example.test">soporte@example.test</a></dd>
+            </div>
+            <div>
+              <dt>Horario ficticio</dt>
+              <dd>Lunes a viernes<br />9:00 a. m. – 5:00 p. m.</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>Portal TI de práctica. No registra tickets reales.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+erDiagram
+    PERSONA ||--o{ SOLICITUD : solicita
+    TIPO_SOLICITUD ||--o{ SOLICITUD : clasifica
+    PRIORIDAD ||--o{ SOLICITUD : asigna
+    SOLICITUD ||--o{ EVENTO_AUDITORIA : genera
+    PERSONA ||--o{ EVENTO_AUDITORIA : actua
+
+    PERSONA {
+        int id_persona PK
+        string nombre
+        string correo
+    }
+    TIPO_SOLICITUD {
+        int id_tipo PK
+        string nombre
+        string descripcion
+    }
+    PRIORIDAD {
+        int id_prioridad PK
+        string nombre
+        int orden
+    }
+    SOLICITUD {
+        int id_solicitud PK
+        int id_persona FK
+        int id_tipo FK
+        int id_prioridad FK
+        string descripcion
+        string estado
+        datetime creada_en
+    }
+    EVENTO_AUDITORIA {
+        int id_evento PK
+        int id_solicitud FK
+        int id_actor FK
+        string accion
+        string valor_anterior
+        string valor_nuevo
+        string motivo
+        string autorizacion_ref
+        datetime instante_utc
+    }

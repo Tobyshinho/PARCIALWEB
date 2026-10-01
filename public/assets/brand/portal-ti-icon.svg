@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Símbolo del Portal TI">
+  <rect width="512" height="512" fill="#0d1b2a" />
+  <path d="M256 76 390 124v105c0 91-53 159-134 207-81-48-134-116-134-207V124l134-48Z" fill="#2563eb" />
+  <path d="m192 255 44 44 91-98" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="34" />
+</svg>
